@@ -1,4 +1,4 @@
-# Robot For Autonomus three Dimensional Spatial Navigation(RASN)
+# Robot For Autonomous three Dimensional Spatial Navigation(RASN)
 
 ## Enviroment Setup
 
