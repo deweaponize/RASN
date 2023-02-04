@@ -1,0 +1,65 @@
+{
+    "Behaviour": {
+        "checkpoints": [
+            {
+                "steps": 19499950,
+                "file_path": "results\\3\\Behaviour\\Behaviour-19499950.onnx",
+                "reward": 191637.0,
+                "creation_time": 1675479238.757526,
+                "auxillary_file_paths": [
+                    "results\\3\\Behaviour\\Behaviour-19499950.pt"
+                ]
+            },
+            {
+                "steps": 19999960,
+                "file_path": "results\\3\\Behaviour\\Behaviour-19999960.onnx",
+                "reward": null,
+                "creation_time": 1675479659.5548923,
+                "auxillary_file_paths": [
+                    "results\\3\\Behaviour\\Behaviour-19999960.pt"
+                ]
+            },
+            {
+                "steps": 20495383,
+                "file_path": "results\\3\\Behaviour\\Behaviour-20495383.onnx",
+                "reward": null,
+                "creation_time": 1675483596.573535,
+                "auxillary_file_paths": [
+                    "results\\3\\Behaviour\\Behaviour-20495383.pt"
+                ]
+            },
+            {
+                "steps": 20499991,
+                "file_path": "results\\3\\Behaviour\\Behaviour-20499991.onnx",
+                "reward": null,
+                "creation_time": 1675491107.8018222,
+                "auxillary_file_paths": [
+                    "results\\3\\Behaviour\\Behaviour-20499991.pt"
+                ]
+            },
+            {
+                "steps": 20503639,
+                "file_path": "results\\3\\Behaviour\\Behaviour-20503639.onnx",
+                "reward": null,
+                "creation_time": 1675491137.98935,
+                "auxillary_file_paths": [
+                    "results\\3\\Behaviour\\Behaviour-20503639.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 20503639,
+            "file_path": "results\\3\\Behaviour.onnx",
+            "reward": null,
+            "creation_time": 1675491137.98935,
+            "auxillary_file_paths": [
+                "results\\3\\Behaviour\\Behaviour-20503639.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.29.0",
+        "torch_version": "1.13.1+cu117"
+    }
+}
