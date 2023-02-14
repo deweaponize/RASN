@@ -1,0 +1,32 @@
+﻿Mass properties of managalayan 
+     Configuration: Default 
+     Coordinate system: -- default -- 
+
+Mass = 742.91 grams 
+
+Volume = 437942.41 cubic millimeters 
+
+Surface area = 395442.26  square millimeters 
+
+Center of mass: ( millimeters ) 
+            X = 104.56 
+            Y = 138.04 
+            Z = 190.96 
+
+Principal axes of inertia and principal moments of inertia: ( grams *  square millimeters ) 
+aTken at the center of mass. 
+             Ix = ( 0.97,  0.01,  0.24)       Px = 2506588.12 
+             Iy = ( 0.24, -0.11, -0.96)       Py = 3607890.80 
+             Iz = ( 0.02,  0.99, -0.10)       Pz = 5518255.21 
+
+Moments of inertia: ( grams *  square millimeters ) 
+Taken at the center of mass and aligned with the output coordinate system. (Using positive tensor notation.) 
+            Lxx = 2573192.78      Lxy = -32095.70        Lxz = 265040.27 
+            Lyx = -32095.70       Lyy = 5496498.94       Lyz = 200442.93 
+            Lzx = 265040.27       Lzy = 200442.93        Lzz = 3563042.42 
+
+Moments of inertia: ( grams *  square millimeters ) 
+Taken at the output coordinate system. (Using positive tensor notation.) 
+            Ixx = 43819856.65     Ixy = 10691128.09      Ixz = 15098573.67 
+            Iyx = 10691128.09     Iyy = 40708677.47      Iyz = 19783769.55 
+            Izx = 15098573.67     Izy = 19783769.55      Izz = 25842295.70 
