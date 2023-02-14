@@ -1,5 +1,7 @@
 # Robot For Autonomous three Dimensional Spatial Navigation(RASN)
 
+![rasn](./documentation/assets/rasn.png)
+
 ## Enviroment Setup
 
 required version of python is `python3.8.6` with unity version `2021.3.15f1`
