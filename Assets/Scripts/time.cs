@@ -1,15 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class time : MonoBehaviour
 {
-    public int managetime;
+	public int managetime;
 
-    // Update is called once per frame
-    void Update()
-    {
-        Time.timeScale=managetime;
-        
-    }
+	// Update is called once per frame
+	void Update()
+	{
+		Time.timeScale = managetime;
+	}
 }

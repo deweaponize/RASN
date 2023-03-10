@@ -1,0 +1,74 @@
+{
+  "count": 1,
+  "self": 79.0820928,
+  "total": 79.1801402,
+  "children": {
+    "InitializeActuators": {
+      "count": 1,
+      "self": 0.0010000999999999999,
+      "total": 0.0010000999999999999,
+      "children": null
+    },
+    "InitializeSensors": {
+      "count": 1,
+      "self": 0,
+      "total": 0,
+      "children": null
+    },
+    "AgentSendState": {
+      "count": 3752,
+      "self": 0.0370178,
+      "total": 0.0420209,
+      "children": {
+        "CollectObservations": {
+          "count": 751,
+          "self": 0.0010002,
+          "total": 0.0010002,
+          "children": null
+        },
+        "WriteActionMask": {
+          "count": 751,
+          "self": 0,
+          "total": 0,
+          "children": null
+        },
+        "RequestDecision": {
+          "count": 751,
+          "self": 0.0030027,
+          "total": 0.0040029,
+          "children": {
+            "RayPerceptionSensor.Perceive": {
+              "count": 751,
+              "self": 0.0010002,
+              "total": 0.0010002,
+              "children": null
+            }
+          }
+        }
+      }
+    },
+    "DecideAction": {
+      "count": 3752,
+      "self": 0.0310128,
+      "total": 0.0310128,
+      "children": null
+    },
+    "AgentAct": {
+      "count": 3752,
+      "self": 0.024012099999999998,
+      "total": 0.024012099999999998,
+      "children": null
+    }
+  },
+  "gauges": {},
+  "metadata": {
+    "timer_format_version": "0.1.0",
+    "start_time_seconds": "1678462204",
+    "unity_version": "2021.3.16f1",
+    "command_line_arguments": "C:\\Program Files\\Unity\\Hub\\Editor\\2021.3.16f1\\Editor\\Unity.exe -projectpath C:\/Users\/shubham\/Documents\/git\/rasn -useHub -hubIPC -cloudEnvironment production -hubSessionId 655e4c70-bf49-11ed-a482-438d295e5c93 -accessToken vSe8nwbDVgmZbEkFmxqHUPb8YM3uAhJanYCUK31PqsY00cf",
+    "communication_protocol_version": "1.5.0",
+    "com.unity.ml-agents_version": "2.0.1",
+    "scene_name": "RoomGeneration",
+    "end_time_seconds": "1678462283"
+  }
+}

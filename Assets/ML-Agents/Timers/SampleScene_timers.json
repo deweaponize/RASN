@@ -1,1 +1,30 @@
-{"count":1,"self":39.2992704,"total":39.3041663,"children":{"InitializeActuators":{"count":1,"self":0.0019922,"total":0.0019922,"children":null},"InitializeSensors":{"count":1,"self":0.0029051,"total":0.0029051,"children":null}},"gauges":{},"metadata":{"timer_format_version":"0.1.0","start_time_seconds":"1666691144","unity_version":"2021.3.3f1","command_line_arguments":"C:\\Program Files\\Unity\\Hub\\Editor\\2021.3.3f1\\Editor\\Unity.exe -projectpath D:\\ML_Unity\\Simulation (2)\\Simulation -useHub -hubIPC -cloudEnvironment production -licensingIpc LicenseClient-harsh -hubSessionId dfdfad70-5448-11ed-84f8-dbe6313bddda","communication_protocol_version":"1.5.0","com.unity.ml-agents_version":"2.0.1","scene_name":"SampleScene","end_time_seconds":"1666691183"}}
+{
+  "count": 1,
+  "self": 39.2992704,
+  "total": 39.3041663,
+  "children": {
+    "InitializeActuators": {
+      "count": 1,
+      "self": 0.0019922,
+      "total": 0.0019922,
+      "children": null
+    },
+    "InitializeSensors": {
+      "count": 1,
+      "self": 0.0029051,
+      "total": 0.0029051,
+      "children": null
+    }
+  },
+  "gauges": {},
+  "metadata": {
+    "timer_format_version": "0.1.0",
+    "start_time_seconds": "1666691144",
+    "unity_version": "2021.3.3f1",
+    "command_line_arguments": "C:\\Program Files\\Unity\\Hub\\Editor\\2021.3.3f1\\Editor\\Unity.exe -projectpath D:\\ML_Unity\\Simulation (2)\\Simulation -useHub -hubIPC -cloudEnvironment production -licensingIpc LicenseClient-harsh -hubSessionId dfdfad70-5448-11ed-84f8-dbe6313bddda",
+    "communication_protocol_version": "1.5.0",
+    "com.unity.ml-agents_version": "2.0.1",
+    "scene_name": "SampleScene",
+    "end_time_seconds": "1666691183"
+  }
+}

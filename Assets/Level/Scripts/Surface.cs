@@ -1,27 +1,29 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class Surface : MonoBehaviour
+namespace Assets.Level.Scripts
 {
-    [Header("Surface Spawn")]
-    public GameObject SurfacePlane;
+	public class Surface : MonoBehaviour
+	{
+		[HideInInspector] public int HeightSurface;
 
-    [Header("Surface Properties")]
-    public int MinHeightSurface;
-    public int MaxHeightSurface;
-    public int MinWidthSurface;
-    public int MaxWidthSurface;
-    [HideInInspector]
-    public int HeightSurface;
-    [HideInInspector]
-    public int WidthSurface;
+		public int MaxHeightSurface;
+		public int MaxWidthSurface;
 
-    void Awake()
-    {
-        HeightSurface = Random.Range(MinHeightSurface, MaxHeightSurface);
-        WidthSurface = Random.Range(MinWidthSurface, MaxWidthSurface);
-        SurfacePlane.transform.localScale = new Vector3(HeightSurface, WidthSurface, SurfacePlane.transform.localScale.z);
-        SurfacePlane.transform.position= new Vector3(HeightSurface/2, 0, WidthSurface/2);
-    }
+		[Header("Surface Properties")] public int MinHeightSurface;
+
+		public int MinWidthSurface;
+
+		[Header("Surface Spawn")] public GameObject SurfacePlane;
+
+		[HideInInspector] public int WidthSurface;
+
+		void Awake()
+		{
+			HeightSurface = Random.Range(MinHeightSurface, MaxHeightSurface);
+			WidthSurface = Random.Range(MinWidthSurface, MaxWidthSurface);
+			SurfacePlane.transform.localScale =
+				new Vector3(HeightSurface, WidthSurface, SurfacePlane.transform.localScale.z);
+			SurfacePlane.transform.position = new Vector3(HeightSurface / 2, 0, WidthSurface / 2);
+		}
+	}
 }

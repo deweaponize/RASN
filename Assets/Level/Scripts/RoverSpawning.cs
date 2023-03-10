@@ -1,53 +1,60 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class RoverSpawning : MonoBehaviour
+namespace Assets.Level.Scripts
 {
-    [Header("Can Spawn?")]
-    public bool CanSpawnRover = true;
+	public class RoverSpawning : MonoBehaviour
+	{
+		[Header("Can Spawn?")] public static bool CanSpawnRover = true;
 
-    [Header("Componenet")]
-    public GameObject Rover;
+		int HeightRover;
 
-    [Header("Values")]
-    public float Margin = 0.10f;
+		[Header("Values")] public float Margin = 0.10f;
 
-    private int MaxHeightRover;
-    private int MinHeightRover;
+		int MaxHeightRover;
 
-    private int MaxWidthRover;
-    private int MinWidthRover;
+		int MaxWidthRover;
+		int MinHeightRover;
+		int MinWidthRover;
 
-    private int HeightRover;
-    private int WidthRover;
+		[Header("Componenet")] public GameObject Rover;
+
+		public GameObject Target;
+
+		public Vector2 TargetRover;
+		int WidthRover;
 
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        MaxHeightRover = FindObjectOfType<Surface>().GetComponent<Surface>().HeightSurface;
-        MaxWidthRover = FindObjectOfType<Surface>().GetComponent<Surface>().WidthSurface;
+		// Start is called before the first frame update
+		void Start()
+		{
+			MaxHeightRover = FindObjectOfType<Surface>().GetComponent<Surface>().HeightSurface;
+			MaxWidthRover = FindObjectOfType<Surface>().GetComponent<Surface>().WidthSurface;
 
-        MinHeightRover = FindObjectOfType<Surface>().GetComponent<Surface>().MinHeightSurface;
-        MinWidthRover = FindObjectOfType<Surface>().GetComponent<Surface>().MinWidthSurface;
+			MinHeightRover = FindObjectOfType<Surface>().GetComponent<Surface>().MinHeightSurface;
+			MinWidthRover = FindObjectOfType<Surface>().GetComponent<Surface>().MinWidthSurface;
+		}
 
-    }
+		public void Update()
+		{
+			if (CanSpawnRover)
+			{
+				Invoke("SpawnRover", 1f);
+				CanSpawnRover = false;
+			}
+		}
 
-    public void Update()
-    {
-        if(CanSpawnRover)
-        {
-            Invoke("SpawnRover",1f);
-            CanSpawnRover = false;
-        }
-    }
+		public void SpawnRover()
+		{
+			HeightRover = Random.Range((int)(Margin * MinHeightRover), MaxHeightRover - (int)(Margin * MaxHeightRover));
+			WidthRover = Random.Range((int)(Margin * MinWidthRover), MaxWidthRover - (int)(Margin * MaxWidthRover));
+			Debug.Log("Height" + HeightRover + " Width " + WidthRover);
+			Instantiate(Rover, new Vector3(HeightRover, 1f, WidthRover), Quaternion.Euler(0, 0, 0));
 
-    public void SpawnRover()
-    {
-        HeightRover = Random.Range((int)(Margin * MinHeightRover), MaxHeightRover - (int)(Margin * MaxHeightRover));
-        WidthRover = Random.Range((int)(Margin * MinWidthRover), MaxWidthRover - (int)(Margin * MaxWidthRover));
-        Debug.Log("Height" + HeightRover + " Width " + WidthRover);
-        Instantiate(Rover as GameObject, new Vector3(HeightRover, 0f, WidthRover), Quaternion.Euler(0,0,0));
-    }
+			TargetRover.x = Random.Range((int)(Margin * MinHeightRover),
+				MaxHeightRover - (int)(Margin * MaxHeightRover));
+			TargetRover.y = Random.Range((int)(Margin * MinWidthRover), MaxWidthRover - (int)(Margin * MaxWidthRover));
+			Instantiate(Target, new Vector3(TargetRover.x, Target.transform.localScale.y, TargetRover.y),
+				Quaternion.Euler(0, 0, 0));
+		}
+	}
 }
